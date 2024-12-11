@@ -6,10 +6,22 @@ using System.Threading.Tasks;
 
 namespace POO.Models
 {
-    internal class Pessoa
+    internal class Pessoa 
     {
+        public Pessoa()
+        {
+            
+        }
+
+        public Pessoa(string nome)
+        {
+            Nome = nome;
+        }
+
         public string Nome { get; set; }
+
         public int Idade { get; set; }
+
         public string Email { get; set; }
 
         public virtual void Apresentar()
